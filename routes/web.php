@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testinController;
+use App\Http\Controllers\httpClint;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,8 @@ Route::get('/CoustomPage', function () {
 // ########### With Parameter ########
 
 Route::get("contRout/{name}",[testincontroller::class,'controllrrTest']);
+
+Route::get("httpclint",[httpClint::class,'HttpClint']);
 
 
 // #############################
